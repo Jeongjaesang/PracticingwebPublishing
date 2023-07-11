@@ -1,0 +1,81 @@
+#Intro_header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#Intro_header span {
+  flex-basis: 38%;
+}
+
+#Intro_header span img {
+  width: 120px;
+  height: 80px;
+}
+
+#Intro_header nav {
+  flex-basis: 62%;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#Intro_header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+#Intro_header nav ul li {
+  margin: 0 14px;
+  font-family: "Noto Serif", serif;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* 메모... 가운데 정렬 */
+
+#navBtn {
+  padding: 12px 14px;
+  border: 1px solid rgb(30, 205, 86);
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(30, 205, 86);
+  transition: background-color 0.5s ease-in-out;
+  /* 메모3: animation 효과 */
+}
+
+#navBtn:hover {
+  /* 메모2: hover시 띄어쓰기 있으면 안된다. */
+  background-color: rgb(30, 205, 86);
+  color: rgb(255, 255, 255);
+}
+
+#menuSpan {
+  display: none;
+  position: fixed;
+  cursor: pointer;
+  right: 30px;
+  top: 30px;
+  font-size: 20px;
+  color: rgb(30, 205, 86);
+}
+
+#closeBtn {
+  display: none;
+}
+
+@media (max-width: 1450px) {
+  #Intro_header nav ul {
+    display: none;
+  }
+
+  #menuSpan {
+    display: inline;
+  }
+}

@@ -1,0 +1,41 @@
+@import url("Intro_content.css");
+
+#Intro {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/horticulture-greenhouse-hero-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* overflow: hidden; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#Intro_menu {
+  display: none;
+  position: absolute;
+  top: 81px;
+  width: 100%;
+  background-color: white;
+  /* display: flex; */
+  flex-direction: column;
+}
+
+#Intro_menu li {
+  padding: 15px;
+  border-bottom: 1px solid rgb(200, 200, 200);
+  transition: color 0.5s ease;
+}
+
+#Intro_menu li a {
+  text-transform: capitalize;
+  color: gray;
+}
+
+#Intro_menu li:hover {
+  color: black;
+  cursor: pointer;
+}

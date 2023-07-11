@@ -1,0 +1,90 @@
+/* .page_main div div div button img {
+  width: 10px;
+  height: 10px;
+}  얜 뭐지 ㅋㅋ*/
+
+.page_main {
+  display: flex;
+}
+
+.page_intro {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.page_title {
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: rgb(30, 205, 86);
+  text-transform: uppercase;
+}
+
+.page_title::after {
+  display: block;
+  content: "";
+  width: 50px;
+  height: 2px;
+  background-color: rgb(30, 205, 86);
+  margin: 15px 0;
+}
+
+.page_phrase p {
+  font-size: 64px;
+  font-family: Poppins, sans-serif;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.page_description {
+  flex-basis: 0;
+  flex-grow: 1;
+  margin-top: 40px;
+}
+
+.page_description p {
+  font-size: 16px;
+  color: white;
+  font-family: "Noto Serif", serif;
+  font-weight: 600;
+  line-height: 29.7143px;
+}
+
+.moreBtn {
+  margin: 30px 0px;
+  padding: 15px;
+  display: flex;
+  border: 1px solid rgb(30, 205, 86);
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.hasBgBtn {
+  background-color: rgb(30, 205, 86);
+  color: white;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.hasBgBtn:hover {
+  background-color: transparent;
+}
+
+.moreBtn span {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin: -5px 0px;
+  margin-right: 12px;
+}
+
+.moreBtn i {
+  font-size: 17px;
+}
+
+@media (max-width: 1000px) {
+  .page_main {
+    flex-direction: column;
+  }
+}

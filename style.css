@@ -1,0 +1,29 @@
+@import url("./reset.css");
+@import url("./Intro_css/Intro.css");
+@import url("./ourProduce_css/ourProduce.css");
+@import url("./ourStory_css/ourStory.css");
+@import url("./features_css/features.css");
+@import url("./ourFarm_css/ourFarm.css");
+@import url("./offer_form_css/offer_form.css");
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+/*  얜 뭔데 되냐 */
+
+body {
+  background-color: rgb(241, 246, 242);
+  height: 100vh;
+}
+
+/* *{} 과 body의 차이, 왜 whole에다가 background 줬을 때는 안됬나 */
+
+#whole {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}

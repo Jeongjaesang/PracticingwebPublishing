@@ -1,0 +1,16 @@
+@import url("Intro_header.css");
+@import url("Intro_main.css");
+@import url("Intro_footer.css");
+
+#Intro_content {
+  width: 80%;
+  /* margin: 0 auto; */
+  /* 메모1 : 중앙정렬 */
+
+  height: 800px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}

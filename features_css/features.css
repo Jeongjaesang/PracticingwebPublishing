@@ -1,0 +1,56 @@
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature_unit {
+  flex-wrap: wrap;
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 10px;
+  position: relative;
+  margin: 30px auto;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.feature_unit:hover {
+  background-color: white;
+}
+
+.feature_unit i {
+  position: absolute;
+  color: rgb(30, 205, 86);
+  top: 30px;
+  left: 53px;
+}
+
+.feature_unit div {
+  position: absolute;
+  top: 28px;
+  right: 65px;
+}
+
+.feature_unit div h1 {
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 15.6px;
+}
+
+.feature_unit div p {
+  font-family: "Noto Serif", serif;
+  font-size: 16px;
+  line-height: 29.7143px;
+}
+
+@media (max-width: 800px) {
+  .features {
+    flex-direction: column;
+    /* position: relative; */
+    /* bottom: -473px; */
+    /* 왜 모바일상에서는 위에 elements들이랑 겹쳐지는지 */
+  }
+}
